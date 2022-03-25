@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 1s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+     overflow-x: hidden;
+}
+
+ 
+/*começo nav*/
+
+.nav{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.89);
+}
+
+.nav h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(214, 212, 212);
+    margin-left: 5px;
+}
+
+.nav .nav2 {
+    position: relative;
+    left: 160px;
+}
+
+.nav .nav2 a{
+    color: rgb(214, 212, 212);
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.nav .nav2 a:hover{
+    border-bottom: 1px solid rgba(191, 243, 240, 0.829);
+    padding-bottom: 5px;
+    transition: .4s linear;
+    color: rgba(178, 252, 248, 0.829);
+}
+
+/*fim nav*/
+
+/*começo home*/
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 900px;
+    background-color: rgb(75, 67, 67);
+    background: url(img/começo.jpg);
+    background-position: left 30% top 15%;
+}
+
+.home .box h1 {
+    font-size: 50px;
+    font-weight: 100;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 150px;
+    color: rgb(240, 240, 240);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.home .box p{
+    margin-top: 30px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    left: 260px;
+    color: rgb(229, 235, 238);
+    text-shadow: rgb(78, 78, 78) 0.1em 0.1em 0.9em;
+}
+
+.home .box button{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    left: 480px;
+    width: 120px;
+    height: 45px;
+    border-radius: 50px;
+    background: #4cafce;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(226, 226, 226);
+}
+
+.home .box button:hover{
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #89cde2;
+}
+/*fim home*/
+
+/*começo features*/
+.box-container{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    margin-left:450px ;
+    margin-top: 30px;
+
+}
+
+.box-container .box{
+    height: 220px;
+    width: 300px;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+
+.box-container .box .box2{
+    display: flex;
+}
+
+.box-container .box .box2 i{
+    color: #4094ad;
+    font-size: 35px;
+    position: relative;
+    left: -55px;
+}
+
+.box-container .box .box2 h2{
+     font-size: 20px;
+     font-weight: 100;
+     margin-bottom: 15px;
+     position: relative;
+     left: -35px;
+}
+
+.box-container .cima{
+position: relative;
+bottom: -50px;
+}
+
+.box-container .box  p{
+font-size: 14px;
+color: rgb(97, 96, 96);
+}
+
+
+/*fim features*/
+
+
+/*Insights começo*/
+.insights{
+    height: 800px;
+    background:rgb(230, 228, 228);
+}
+
+
+.insights .titulo{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 40%;
+    margin-left: 550px;
+    margin-top: 55px;
+}
+
+.insights .titulo h1{
+    margin-bottom: 50px;
+    font-weight: 100;
+    color: rgb(71, 71, 71);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.insights .titulo p{
+    text-align: center;
+    position: relative;
+    top: -25px;
+    color: rgb(58, 58, 58);
+}
+
+.insights .box-container{
+    position: relative;
+    bottom: -100px;
+    left: -50px;
+}
+
+.insights  .box{
+    height: 380px;
+    width: 300px;
+    background:  #67b3ca;
+    border-radius: 5px;
+}
+
+.insights  .cor{
+    background:#2896b8 ;
+}
+
+.insights  .box h2{
+    color: rgb(240, 234, 234);
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.insights  .box h1{
+    text-align: center;
+    color: rgb(228, 226, 226);
+    font-weight: 100;
+   font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+}
+
+.insights  .box p{
+    color: rgb(228, 226, 226);
+    margin-top: 10px;
+}
+
+.insights  .box img{
+    width: 100%;
+    height: 50px;
+}
+
+.insights  .box button{
+    margin-top: 18px;
+    margin-left: 55px;
+    width: 140px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background:  #67b3ca;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+  
+}
+
+.insights  .cor button{
+    background:#2896b8 ;
+}
+
+.insights  .box button:hover{
+    border-radius: 10px;
+    letter-spacing: 1px;
+
+}
+
+/*Insights fim*/
+
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #faf9f9;
+    height: 500px;
+}
+
+.products .img{
+   position: relative;
+   right: -300px;
+   top: 38px;
+   width: 800px;
+}
+
+.products .box{
+    width:600px ;
+    height: 400px;
+    position: relative;
+    right: -250px;
+    top: 20px;
+    padding: 15px;
+}
+
+.products .box h1{
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(71, 71, 71);
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.products .box p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 15px;
+}
+
+.products .box button{
+    text-align: center;
+    position: relative;
+    left: 40px;
+    top: 20px;
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    background: #4cafce;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(226, 226, 226);
+}
+
+/*planning começo*/
+/* .planning {
+    border: 1px solid red;
+    height: 500px;
+} */
+
+/*planning fim*/
+
+/*research começo*/
+
+.research{
+    height: 900px;
+    background:rgb(230, 228, 228);;
+}
+
+.research .box1{
+ width: 900px;
+ height: 200px;
+ margin-left:500px;
+padding-top: 50px;
+}
+
+.research .box1 h1{
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(71, 71, 71);
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.research .box1 p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 15px;
+}
+
+.research .box-container{
+    width: 1400px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    bottom: -100px;
+    left: -150px;
+}
+
+
+.research .box-container .box{
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.247);
+    margin-left: 50px;
+}
+
+.research .box-container .box i{
+    position: relative;
+    left: 100px;
+    font-size: 55px;
+    color: #4094ad;
+    margin-bottom: 20px;
+}
+
+.research .box-container .box h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.research .box-container .box p{
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.research .box-container .box button{
+    background: none;
+    position: relative;
+    left: 45px;
+    color: #14647c;
+    margin-top: 15px;
+    border: 1px solid #fff;
+    height: 30px;
+    width: 150px;
+    border-radius: 50px;
+}
+
+.research .box-container .box button:hover{
+   border-radius: 10px; 
+   letter-spacing: 1px;
+}
+
+
+
+/*research fim*/
+
+/*cliente começo*/
+.cliente{
+    height: 500px;
+    background-image: url(img/casal.avif);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cliente h1{
+    font-size: 50px;
+    font-weight: 100;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 150px;
+    color: rgb(240, 240, 240);
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.cliente p{
+    margin-top: 30px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    left: 260px;
+    color: rgb(229, 235, 238);
+    text-shadow: rgb(78, 78, 78) 0.1em 0.1em 0.9em;
+}
+
+.cliente button{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    left: 480px;
+    width: 200px;
+    height: 45px;
+    border-radius: 50px;
+    background: #4cafce;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(226, 226, 226);
+}
+
+.cliente button:hover{
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: #89cde2;
+}
+
+
+/*cliente fim*/
+
+/*Events começo*/
+
+.events{
+    height: 1100px;
+    background:rgb(230, 228, 228);
+
+}
+
+.events .box1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 700px;
+    position: relative;
+    left: 700px;
+}
+
+.events .box1 h1{
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(71, 71, 71);
+    margin-bottom: 45px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.events .box1 p{
+    text-align: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.events .box-container{
+    height: 600px;
+    position: relative;
+    top: 100px;
+    left: -80px;
+    width: 1200px;
+}
+
+.events .box-container .box{
+    height: 580px;
+    background: #fffafa;
+}
+
+.events .box-container .box h5{
+    font-size: 12px;
+    color: #14647c;
+}
+
+.events .box-container .box h2{
+    font-size: 16px;
+    margin-top: 10px;
+    font-family:'Poppins', sans-serif ;
+    font-weight: 600;
+    text-align: center;
+}
+
+.events .box-container .box p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.events .box-container .box .img img{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    left: -20px;
+    top: -20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.events .box-container .box button{
+    background: none;
+    position: relative;
+    left: -45px;
+    color: #14647c;
+    margin-top: 15px;
+    height: 30px;
+    width: 150px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+ .events button.btn{
+    background:#c5c3c3;
+    position: relative;
+    left: 900px;
+    top: 100px;
+    color: #fff;
+    margin-top: 15px;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 160px;
+    border-radius: 50px;
+}
+
+.events button.btn:hover{
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+
+/*Events fim*/
+
+/*footer começo*/
+
+footer.box-container1{
+    background-color: rgb(77, 77, 77);
+    width: 100%;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.box-container1 .box{
+    width: 380px;
+    height:400px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+footer.box-container1 .box2{
+    margin-left: 200px;
+}
+
+footer.box-container1 .box:first-child{
+    text-align: center;
+}
+
+footer.box-container1 .box h3{
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-family:'Poppins', sans-serif ;
+    color: rgb(235, 233, 233);
+}
+
+footer.box-container1 .box h6{
+    font-size: 12px;
+    font-weight: 100;
+color: rgb(190, 190, 190);
+}
+
+
+
+footer.box-container1 .box p{
+font-size: 15px;
+color: rgb(190, 190, 190);
+}
+
+footer.box-container1 .box ul{
+    list-style: none;
+    color: rgb(190, 190, 190);
+}
+
+.sociais{
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(58, 58, 58);
+    text-align: center;
+}
+.sociais .box{
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.sociais .box a{
+    font-size: 30px;
+    color: rgb(206, 201, 201);
+    position: relative;
+    bottom: -15px;
+}
+
+.sociais .box:hover{
+    background-color: #5db2ccb9;
+}
+
+/*footer fim*/
+
+
+/*animaçoes scroll começo*/
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime='left']{
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime='right']{
+    transform: translate3d(100px, 0, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+/*animaçoes scroll fim*/
